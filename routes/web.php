@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\VacanteController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,13 +16,10 @@ use App\Http\Controllers\HomeController;
 */
 
 Route::get('/',HomeController::class);
-Route::get('vacante',function(){
-    return "pagina de vacante";
-});
-Route::get('vacante/create',function(){
-    return "puedes crear un vacante";
-});
-Route::get('vacante/{vacante}/{descv?}', function ($vacante,$descv = null) {
+Route::get('vacante',[VacanteController::class, 'index']);
+Route::get('vacante/create',[VacanteController::class, 'create']);
+Route::get('vacante/{vacante}',[VacanteController::class, 'show']);
+/*Route::get('vacante/{vacante}/{descv?}', function ($vacante,$descv = null) {
     if ($descv) {
         return "estas en la pagina de la: $vacante, esta es su descripción $descv";
     }
@@ -29,4 +27,4 @@ Route::get('vacante/{vacante}/{descv?}', function ($vacante,$descv = null) {
         return "estas en la pagina de la vacante: $vacante, pulsa aqui para ver la descripcion de la vacante";
     }
    
-});
+});*/
