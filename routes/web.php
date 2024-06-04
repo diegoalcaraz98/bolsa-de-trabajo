@@ -19,12 +19,3 @@ Route::get('/',HomeController::class);
 Route::get('vacante',[VacanteController::class, 'index']);
 Route::get('vacante/create',[VacanteController::class, 'create']);
 Route::get('vacante/{vacante}',[VacanteController::class, 'show']);
-/*Route::get('vacante/{vacante}/{descv?}', function ($vacante,$descv = null) {
-    if ($descv) {
-        return "estas en la pagina de la: $vacante, esta es su descripción $descv";
-    }
-    else{
-        return "estas en la pagina de la vacante: $vacante, pulsa aqui para ver la descripcion de la vacante";
-    }
-   
-});*/
