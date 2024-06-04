@@ -16,6 +16,8 @@ use App\Http\Controllers\VacanteController;
 */
 
 Route::get('/',HomeController::class);
-Route::get('vacante',[VacanteController::class, 'index']);
-Route::get('vacante/create',[VacanteController::class, 'create']);
-Route::get('vacante/{vacante}',[VacanteController::class, 'show']);
+Route::controller(VacanteController::class)->group(function(){
+    Route::get('vacante','index');
+Route::get('vacante/create','create');
+Route::get('vacante/{vacante}','show');
+});
