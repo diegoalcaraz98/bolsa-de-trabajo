@@ -16,12 +16,18 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return "inicio";
 });
-Route::get('cursos',function(){
-    return "pagina de cursos";
+Route::get('vacante',function(){
+    return "pagina de vacante";
 });
-Route::get('cursos/create',function(){
-    return "puedes crear un curso";
+Route::get('vacante/create',function(){
+    return "puedes crear un vacante";
 });
-Route::get('cursos/{curso}',function($curso){
-    return "pagina de curso: $curso";
+Route::get('vacante/{vacante}/{descv}', function ($vacante,$descv = null) {
+    if ($descv) {
+        return "estas en la pagina de la: $vacante, esta es su descripción $descv";
+    }
+    else{
+        return "estas en la pagina de la vacante: $vacante, pulsa aqui para ver la descripcion de la vacante";
+    }
+   
 });
