@@ -22,7 +22,7 @@ Route::get('vacante',function(){
 Route::get('vacante/create',function(){
     return "puedes crear un vacante";
 });
-Route::get('vacante/{vacante}/{descv}', function ($vacante,$descv = null) {
+Route::get('vacante/{vacante}/{descv?}', function ($vacante,$descv = null) {
     if ($descv) {
         return "estas en la pagina de la: $vacante, esta es su descripción $descv";
     }
