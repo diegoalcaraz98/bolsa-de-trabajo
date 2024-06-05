@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 class VacanteController extends Controller
 {
     public function index(){
-        return view('vacante.index');
+        return view("vacante.index");
     }
     public function create(){
     }
