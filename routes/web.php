@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\VacanteController;
-
+use App\Http\Controllers\UsuariosController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -18,6 +18,6 @@ use App\Http\Controllers\VacanteController;
 Route::get('/',HomeController::class);
 Route::controller(VacanteController::class)->group(function(){
     Route::get('vacante','index');
-Route::get('vacante/create','create');
-Route::get('vacante/{vacante}','show');
+    Route::get('vacante/create','create');
+    Route::get('vacante/{vacante}','show');
 });
