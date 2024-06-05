@@ -29,7 +29,7 @@
     <div class="logo" style="display: block">
         <nav>
     
-            <img src="OIP.jpeg" class="foto">
+            <img src="logo.jpg" class="foto">
         </nav>
     </div>
     
