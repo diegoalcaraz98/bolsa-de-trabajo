@@ -5,6 +5,12 @@
 @section('content')
     <h1>puedes crear un vacante</h1>
 @endsection
+<style>
+    .imagenes{
+        width: "500px";
+        height: "500px";
+    }
+</style>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,6 +20,9 @@
     <title>Document</title>
 </head>
 <body>
-    <img src="logo.jpg" alt="logo" width="500"height="500">
+    <div class= "imagenes">
+        <img src="resource/imagenes/logo.jpg" alt="logo">
+    </div>
+    
 </body>
 </html>
