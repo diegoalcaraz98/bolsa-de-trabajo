@@ -1,14 +1,15 @@
 @extends('layout.plantilla')
 
+
 @section('title', 'create')
    
 @section('content')
     <h1>puedes crear un vacante</h1>
 @endsection
 <style>
-    .imagenes{
-        width: "500px";
-        height: "500px";
+    .logo{
+        width: "50px";
+        height: "50px";
     }
 </style>
 <!DOCTYPE html>
@@ -20,8 +21,10 @@
     <title>Document</title>
 </head>
 <body>
-    <div class= "imagenes">
-        <img src="resource/imagenes/logo.jpg" alt="logo">
+    <div class="logo">
+        <nav>
+            <img src="imagenes/logo.jpg" alt="">
+        </nav>
     </div>
     
 </body>
