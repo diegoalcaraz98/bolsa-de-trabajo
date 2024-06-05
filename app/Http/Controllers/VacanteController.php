@@ -10,7 +10,9 @@ class VacanteController extends Controller
         return view("vacante.index");
     }
     public function create(){
+        return view("vacante.create");
     }
     public function show($vacante){
+        return view("vacante.show", ['vacante'=>$vacante]);
     }
 }
