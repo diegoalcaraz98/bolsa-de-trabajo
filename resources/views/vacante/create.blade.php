@@ -8,11 +8,7 @@
     
 @endsection
 <style>
-    .foto{
-        width: 100px;
-        height: 100px;
-        display: flex;
-    }
+    
 </style>
 <!DOCTYPE html>
 <html lang="en">
@@ -25,7 +21,8 @@
 <body>
     <div class="logo">
         <nav>
-            <img src="logo.jpg" alt="foto">
+            <img src="../imagenes/logo.jpg" alt="foto" width="50" height="50">
+            <p style="top: 100px; left:20px;">Bolsa de trabajo</p><br><p>tu mejor opción para encontrar un puesto de trabajo</p>
         </nav>
     </div>
     
