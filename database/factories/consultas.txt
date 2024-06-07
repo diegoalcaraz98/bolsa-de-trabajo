@@ -1,0 +1,13 @@
+use App\Models\Empresa
+$empresa=Empresa::all();
+$empresa=Empresa::where('vacante','administrador de base de datos')->get();
+$empresa=Empresa::where('vacante','administrador de base de datos')->orderby('id', 'desc')->get();
+$empresa=Empresa::where('vacante','administrador de base de datos')->orderby('nombre', 'asc')->get();
+$empresa=Empresa::select('nombre','vacante')->get();
+$empresa=Empresa::select('nombre','vacante')->orderby('nombre','asc')->where('vacante','administrador de base de datos')->get();
+$empresa=Empresa::select('nombre','vacante','id')->orderby('nombre','asc')->where('id')->get();
+$empresa=Empresa::select('nombre','vacante','id')->orderby('nombre','asc')->where('id')->take(5)->get();
+$empresa=Empresa::where('nombre','avanza solido')->get();
+$empresa=Empresa::where('nombre','avanza solido')->first();
+$empresa=Empresa::find(2);
+$empresa=Empresa::where('nombre','like', '% solido %')->get();
