@@ -1,8 +1,9 @@
 @extends('layout.plantilla')
 
-@section('title', 'index')
-   
+@section('title', 'vacantes')
+
 @section('content')
-<h1>pagina de vacante</h1>
+
 @endsection
+
 
