@@ -1,6 +1,6 @@
 @extends('layout.plantilla')
 
-@section('title', 'vacantes')
+@section('title', 'registro')
 
 @section('content')
 
@@ -68,9 +68,6 @@
         <br>
         <a href="vacante/show.blade.php" class="ini"style="background-color: aquamarine; border-radius: 15px;" >Iniciar sesion</a>
         <br>
-        <a href="#">¿No te acuerdas de tu contraseña?</a>
-        <br>
-        <a href="vacante/registro.blade.php">Registrate es gratis</a>
 
     </div>
 </body>

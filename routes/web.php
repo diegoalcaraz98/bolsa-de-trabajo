@@ -4,6 +4,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\VacanteController;
 use App\Http\Controllers\UsuariosController;
+use Faker\Guesser\Name;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,9 +17,8 @@ use App\Http\Controllers\UsuariosController;
 |
 */
 
-Route::get('/',HomeController::class);
-Route::controller(VacanteController::class)->group(function(){
-    Route::get('vacante','index');
-    Route::get('vacante/create','create');
-    Route::get('vacante/{vacante}','show');
-});
+Route::get('/', HomeController::class);
+Route::get('vacante', [VacanteController::class, 'index'])->name('vacante.index');
+Route::get('vacante/create', [VacanteController::class, 'create'])->name('vacante.create');
+Route::post('vacante', [VacanteController::class, 'store'])->name('vacante.store');
+Route::get('vacante/{vacante}', [VacanteController::class, 'show'])->name('vacante.show');

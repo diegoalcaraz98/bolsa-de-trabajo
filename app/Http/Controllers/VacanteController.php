@@ -12,6 +12,13 @@ class VacanteController extends Controller
     public function create(){
         return view("vacante.create");
     }
+    public function store(Request $request){
+        $vacante=new VacanteController();
+        $vacante->nombre=$request->nombre;
+        
+        
+        
+    }
     public function show($vacante){
         return view("vacante.show", ['vacante'=>$vacante]);
     }
