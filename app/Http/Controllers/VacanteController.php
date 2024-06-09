@@ -13,10 +13,8 @@ class VacanteController extends Controller
         return view("vacante.create");
     }
     public function store(Request $request){
-        $vacante=new VacanteController();
-        $vacante->nombre=$request->nombre;
-        
-        
+        $vacante = new VacanteController();
+        $vacante->nombre= $request->nombre;
         
     }
     public function show($vacante){

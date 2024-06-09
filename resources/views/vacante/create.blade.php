@@ -65,7 +65,7 @@
             <br>
             <input type="text" name="Duracion del curso" id="" placeholder="Duracion del curso">
         </label>
-        <br><br>
+        <br>
         <label>
             <button type="submit">Guardar</button>
         </label>
