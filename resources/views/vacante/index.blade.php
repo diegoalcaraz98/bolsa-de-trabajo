@@ -42,6 +42,7 @@
     .ini{
         position: absolute;
         left: 50px;
+        border:2px solid black;
     }
 </style>
 <!DOCTYPE html>
@@ -61,11 +62,11 @@
         <br>
         <input type="text" name="usuario" id="us" placeholder="usuario">
         <br>
-        <h2 class="cont">Contraseña</h2>
+        <h2 class="cont" >Contraseña</h2>
         <br>
         <input type="password" name="pas" id="pass" placeholder="contraseña">
         <br>
-        <input type="button" class="ini" value="iniciar sesion" style="background-color: aquamarine; border-radius: 15px;">
+        <a href="vacante/show.blade.php" class="ini"style="background-color: aquamarine; border-radius: 15px;" >Iniciar sesion</a>
         <br>
         <a href="#">¿No te acuerdas de tu contraseña?</a>
         <br>

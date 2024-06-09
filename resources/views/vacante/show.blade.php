@@ -26,6 +26,10 @@
         top: 11px;
         left: 62px;
     }
+    table{
+        border-block-color: red;
+        border-collapse: separate;
+    }
 </style>
 
 <body class="fon">
@@ -34,6 +38,22 @@
         <h3 class="bol">Bolsa de trabajo</h3><br>
         <h4 class="trab">tu mejor opcion para encontrar trabajo</h>
     </nav>
+    <div>
+        <table>
+            <tr>avanza solido</tr>
+        </table>
+            <tr>administrador de base de datos</tr>
+        </table>
+            <tr>cuidas y mantienes la base de datos</tr>
+        </table>
+        <table>
+            <tr>ambar rojo</tr>
+        </table>
+            <tr>administrador de base de datos</tr>
+        </table>
+            <tr>cuidas y mantienes la base de datos</tr>
+        </table>
+    </div>
 </body>
 
 </html>
