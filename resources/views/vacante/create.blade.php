@@ -51,20 +51,21 @@
         <label>
             Vacante:
             <br>
-            <input type="text" name="vacantes" placeholder="Nombre de la vacante">
+            <input type="text" name="vacante" placeholder="Nombre de la vacante">
         </label>
         <br>
         <label>
             Descripción:
             <br>
-            <textarea name="Descvacamte"rows="10" placeholder="Descripcion del curso"></textarea>
+            <textarea name="desvacante"rows="10" placeholder="Descripcion del curso"></textarea>
         </label>
         <br>
         <label>
             Duracion:
             <br>
-            <input type="text" name="Duracion del curso" id="" placeholder="Duracion del curso">
+            <input type="text" name="Duracion" id="" placeholder="Duracion del curso">
         </label>
+        <br>
         <br>
         <label>
             <button type="submit">Guardar</button>

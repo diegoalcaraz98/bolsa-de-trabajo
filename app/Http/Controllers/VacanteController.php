@@ -6,6 +6,12 @@ use Illuminate\Http\Request;
 
 class VacanteController extends Controller
 {
+    protected $nombre;
+    protected $vacante;
+    protected $desvacante;
+    protected $duracion;
+    public function save(){}
+
     public function index(){
         return view("vacante.index");
     }
@@ -15,6 +21,12 @@ class VacanteController extends Controller
     public function store(Request $request){
         $vacante = new VacanteController();
         $vacante->nombre= $request->nombre;
+        $vacante->vacante= $request->vacante;
+        $vacante->desvacante= $request->desvacante;
+        $vacante->duracion= $request->duracion;
+        $vacante->save();
+
+        return redirect()->route('vacante.show', $vacante);
         
     }
     public function show($vacante){
