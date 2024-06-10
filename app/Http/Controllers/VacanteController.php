@@ -29,7 +29,7 @@ class VacanteController extends Controller
         $vacante->duracion= $request->duracion;
         $vacante->save();
 
-        return view('vacante.create');
+        return view("vacante.show", ['vacante'=>$request]);
         
     }
     public function show($vacante){
