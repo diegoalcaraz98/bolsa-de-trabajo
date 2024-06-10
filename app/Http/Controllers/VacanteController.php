@@ -18,6 +18,9 @@ class VacanteController extends Controller
     public function create(){
         return view("vacante.create");
     }
+    public function stringValue(){
+
+    }
     public function store(Request $request){
         $vacante = new VacanteController();
         $vacante->nombre= $request->nombre;
@@ -26,7 +29,7 @@ class VacanteController extends Controller
         $vacante->duracion= $request->duracion;
         $vacante->save();
 
-        return redirect()->Route('vacante.show', $vacante);
+        return view('vacante.create');
         
     }
     public function show($vacante){
