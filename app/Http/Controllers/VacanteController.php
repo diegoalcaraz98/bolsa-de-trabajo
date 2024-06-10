@@ -26,7 +26,7 @@ class VacanteController extends Controller
         $vacante->duracion= $request->duracion;
         $vacante->save();
 
-        return redirect()->route('vacante.show', $vacante);
+        return redirect()->Route('vacante.show', $vacante);
         
     }
     public function show($vacante){
